@@ -1,0 +1,22 @@
+Importance of Framework:
+
+
+Pre-requisites:
+1. Create one New Folder for Framework
+2. Install Additional Packages
+ npm install csv-parse
+ npm install xlsx
+ npm install -D allure-playwright
+ npm install @faker-js/faker //--> To Generate Randome test data(Ex: Random FirstName, LastName, City, Address etc)
+All these dependecies added in 'Package.json' (Similar to POM.XML for MAVEN Project)
+3. Create Project Folder Structure
+ tests - available when created/installed playwright
+ pages - 
+ utils - To read data from JSON, CSV files etc
+ testdata - for data driven testing
+ reports -
+ test.config.ts(file) - Global test data storing
+4. Update playwright.config.ts as per your project needs (copied from pdf)
+
+Note:
+Use 'SelectorHub' option of Getting Multiple locators in a page for multiple elements with each click on element
